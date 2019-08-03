@@ -1,0 +1,23 @@
+GMF arguments: Namespace(batch_size=256, dataset='ml-1m', epochs=100, learner='adam', lr=0.001, num_factors=8, num_neg=4, out=1, path='Data/', regs='[0,0]', verbose=1)
+Load data done [13.6 s]. #user=6040, #item=3706, #train=994169, #test=6040
+Init: HR = 0.1036, NDCG = 0.0488	 [4.1 s]
+
+End. Best Iteration 98:  HR = 0.6437, NDCG = 0.3749. 
+The best GMF model is saved to Pretrain/ml-1m_GMF_8_1564727633.h5
+
+
+
+MLP arguments: Namespace(batch_size=256, dataset='ml-1m', epochs=100, layers='[64,32,16,8]', learner='adam', lr=0.001, num_neg=4, out=1, path='Data/', reg_layers='[0,0,0,0]', verbose=1) 
+Load data done [13.5 s]. #user=6040, #item=3706, #train=994169, #test=6040
+Init: HR = 0.0978, NDCG = 0.0433 [4.9]
+
+End. Best Iteration 29:  HR = 0.6763, NDCG = 0.3988. 
+The best MLP model is saved to Pretrain/ml-1m_MLP_[64,32,16,8]_1564731567.h5
+
+
+NeuMF arguments: Namespace(batch_size=256, dataset='ml-1m', epochs=100, layers='[64,32,16,8]', learner='adam', lr=0.001, mf_pretrain='', mlp_pretrain='', num_factors=8, num_neg=4, out=1, path='Data/', reg_layers='[0,0,0,0]', reg_mf=0, verbose=1) 
+Load data done [13.2 s]. #user=6040, #item=3706, #train=994169, #test=6040
+Init: HR = 0.1026, NDCG = 0.0461
+
+End. Best Iteration 35:  HR = 0.6848, NDCG = 0.4095. 
+The best NeuMF model is saved to Pretrain/ml-1m_NeuMF_8_[64,32,16,8]_1564741657.h5
